@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\{ForumController};
 use App\Http\Controllers\Site\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('/forum', [ForumController::class, 'index'])->name('forum.index');
+
 Route::get('/contato', [SiteController::class, 'contact']);
 
 Route::get('/', function () {
