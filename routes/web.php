@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-Route::get('/forum', [ForumController::class, 'index'])->name('forum.index');
+Route::get('/supports', [ForumController::class, 'index'])->name('supports.index');
 
 Route::get('/contato', [SiteController::class, 'contact']);
 
