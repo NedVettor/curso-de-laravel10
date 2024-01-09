@@ -3,7 +3,7 @@
 
 namespace App\Repositories;
 
-use App\DTO\Supoorts\CreateSupportDTO;
+use App\DTO\Supports\CreateSupportDTO;
 use App\DTO\Supports\UpdateSupportDTO;
 use stdClass;
 
@@ -16,3 +16,4 @@ interface SupportRepositoryInterface
     public function new(CreateSupportDTO $dto): stdClass;
     public function update(UpdateSupportDTO $dto): stdClass|null;
 }
+
